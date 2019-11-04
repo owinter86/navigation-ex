@@ -13,7 +13,6 @@ import { Route, NavigationContext } from '@react-navigation/core';
 import { SafeAreaConsumer } from 'react-native-safe-area-context';
 
 import TabBarIcon from './TabBarIcon';
-import TouchableWithoutFeedbackWrapper from './TouchableWithoutFeedbackWrapper';
 import { BottomTabBarProps, BottomTabBarButtonProps } from '../types';
 
 type State = {

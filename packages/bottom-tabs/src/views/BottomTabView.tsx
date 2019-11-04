@@ -4,14 +4,15 @@ import {
   StyleSheet,
   AccessibilityRole,
   AccessibilityStates,
-  TouchableWithoutFeedbackWrapper,
 } from 'react-native';
+
 import { Route, CommonActions } from '@react-navigation/core';
 import { TabNavigationState } from '@react-navigation/routers';
 // eslint-disable-next-line import/no-unresolved
 import { ScreenContainer } from 'react-native-screens';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+import TouchableWithoutFeedbackWrapper from './TouchableWithoutFeedbackWrapper';
 import ResourceSavingScene from './ResourceSavingScene';
 import BottomTabBar from './BottomTabBar';
 import {
