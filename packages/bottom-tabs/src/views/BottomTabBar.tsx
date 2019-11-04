@@ -265,9 +265,7 @@ export default class TabBarBottom extends React.Component<Props, State> {
       getAccessibilityLabel,
       getAccessibilityRole,
       getAccessibilityStates,
-      renderButton = (props: BottomTabBarButtonProps) => (
-        <TouchableWithoutFeedbackWrapper {...props} />
-      ),
+      renderButton,
       getTestID,
       style,
       tabStyle,

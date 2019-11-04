@@ -4,6 +4,7 @@ import {
   StyleSheet,
   AccessibilityRole,
   AccessibilityStates,
+  TouchableWithoutFeedbackWrapper,
 } from 'react-native';
 import { Route, CommonActions } from '@react-navigation/core';
 import { TabNavigationState } from '@react-navigation/routers';
@@ -63,7 +64,7 @@ export default class BottomTabView extends React.Component<Props, State> {
       return options.tabBarButton(rest);
     }
 
-    return undefined;
+    return <TouchableWithoutFeedbackWrapper {...rest} />;
   };
 
   private renderIcon = ({
